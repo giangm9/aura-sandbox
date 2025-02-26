@@ -17,10 +17,10 @@ for floor in builing.children:
     for unit in floor.children:
         name = unit.name
         if "Facade" in name:
-            unit.name = f"{building_name}_F{floor_id}_Facade"
+            unit.name = f"{building_name}_F{floor_name}_Facade"
             continue
         if "Proxy" in name:
-            unit.name = f"{building_name}_F{floor_id}_Proxy"
+            unit.name = f"{building_name}_F{floor_name}_Proxy"
             continue
 
         unit_id = name.split("_")[-1].zfill(2)
