@@ -49,11 +49,15 @@ for building_id in buildings:
         center_object.location.z,
         -center_object.location.y,
     ]
+    floor_names = list(
+        map(
+            lambda name: f"{building_id}_F{name}",
+            ["Bottom", "3", "4", "5", "6", "7", "8", "Top"],
+        )
+    )
 
-    for floor in building.children:
-        if not floor.name.startswith(f"{building_id}_F"):
-            continue
-
+    for name in floor_names:
+        floor = bpy.data.objects.get(name)
         floor_data = {
             "id": floor.name,
             "name": floor.name.replace(f"{building_id}_F", "Floor_"),

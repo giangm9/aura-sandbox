@@ -9,6 +9,13 @@
   ],
   "floors": [
     {
+      "id": "WM_FBottom",
+      "name": "Floor_Bottom",
+      "facade": "WM_FBottom_Facade",
+      "proxy": "WM_FBottom_Proxy",
+      "units": []
+    },
+    {
       "id": "WM_F3",
       "name": "Floor_3",
       "facade": "WM_F3_Facade",
@@ -740,13 +747,6 @@
           "WM_F8_17_Cover"
         ]
       ]
-    },
-    {
-      "id": "WM_FBottom",
-      "name": "Floor_Bottom",
-      "facade": "WM_FBottom_Facade",
-      "proxy": "WM_FBottom_Proxy",
-      "units": []
     },
     {
       "id": "WM_FTop",
