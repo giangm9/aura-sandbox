@@ -10,6 +10,11 @@ const files = readdirSync("src/entries", { recursive: true })
     return item.toString().replaceAll(folderSlash, "/")
   })
   .filter((item) => item)
+  .filter((item) => {
+    if (!item.includes(".")) return true
+
+    return item.endsWith(".tsx")
+  })
 
 export default defineConfig({
   plugins: [react()],

@@ -1,3 +1,0 @@
-document.body.innerHTML = `
-    test
-    `
