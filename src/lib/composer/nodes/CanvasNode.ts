@@ -24,15 +24,12 @@ export class CanvasNode extends WebGLNode {
     this.camera.position.z = 1
     this.camera.lookAt(this.scene.position)
   }
-  execute(): void {
+  execute() {
     this.plane.material.map = this.inpColor.value
     this.plane.material.needsUpdate = true
     this.renderer.setRenderTarget(null)
-    this.renderer.setSize(
-      this.canvas.clientWidth,
-      this.canvas.clientHeight,
-      false
-    )
+    this.resizeTarget(this.canvas.clientWidth, this.canvas.clientHeight)
+
     this.renderer.render(this.scene, this.camera)
   }
 }

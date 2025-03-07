@@ -2,11 +2,14 @@ export class Composer {
   nodes: Node[] = []
   execute(node: Node, debugIndent: number = 0) {
     if (node.executed) return
-    console.log("  ".repeat(debugIndent) + node.name)
+    // console.group(
+    //   "  ".repeat(debugIndent) + `${this.constructor.name}::${node.name}`
+    // )
 
     for (const input of node.inputs) {
       if (input.outslot && input.outslot.node) {
         const node = input.outslot.node
+
         this.execute(node, debugIndent + 1)
         node.executed = true
         input.value = input.outslot.value
@@ -20,6 +23,7 @@ export class Composer {
     }
 
     node.execute()
+    console.groupEnd()
   }
 
   freshExecute(node: Node) {

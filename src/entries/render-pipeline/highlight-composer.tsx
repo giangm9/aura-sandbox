@@ -95,7 +95,7 @@ focusNode.inpCamera.defaultValue = camera
 
 const nonFocusSceneDepth = composer.createNode(RenderSceneNode)
 nonFocusSceneDepth.inpScene.defaultValue = () => {
-  const nonFocus = scene.clone()
+  const nonFocus = scene.clone(false)
   const focusObject = nonFocus.getObjectByName(state.house)
 
   if (focusObject) {
@@ -156,7 +156,7 @@ combineNode.build(
     float highlightDepth = texture2D(u_highlightDepth, vUv).r;
     if (highlightDepth > sceneDepth) {
 
-      gl_FragColor.rgb = mix(scene.rgb, highlight.rgb, highlight.a * 0.1);
+      gl_FragColor.rgb = mix(scene.rgb, highlight.rgb, highlight.a * 0.3);
 
 
     } else {
@@ -215,12 +215,13 @@ depthDebug.name = "Debug"
 
 combineNode.getInput("u_scene").outslot = sceneNode.outColor
 combineNode.getInput("u_sceneDepth").outslot = nonFocusSceneDepth.outDepth
-combineNode.getInput("u_highlight").outslot = highLightNode.output
+
+combineNode.getInput("u_highlight").outslot = highLightNode.outColor
 combineNode.getInput("u_highlightDepth").outslot = focusNode.outDepth
 
 const canvasNode = composer.createNode(CanvasNode)
 canvasNode.name = "Canvas"
-canvasNode.inpColor.outslot = combineNode.output
+canvasNode.inpColor.outslot = depthDebug.outColor
 
 updateFuncs.push(() => {
   controls.update()
@@ -228,5 +229,6 @@ updateFuncs.push(() => {
 })
 
 updateFuncs.push(() => {
+  console.log(nonFocusSceneDepth.outDepth.value)
   stats.end()
 })

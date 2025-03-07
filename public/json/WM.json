@@ -3,9 +3,7 @@
   "id": "WM",
   "name": "WM",
   "cameraStartPosition": [
-    -97.52706146240234,
-    40.747127532958984,
-    -84.0420913696289
+    -97.52706146240234, 40.747127532958984, -84.0420913696289
   ],
   "floors": [
     {
@@ -21,126 +19,30 @@
       "facade": "WM_F3_Facade",
       "proxy": "WM_F3_Proxy",
       "units": [
-        [
-          "WM_F3_00",
-          "WM_F3_00",
-          "WM_F3_00_Cover"
-        ],
-        [
-          "WM_F3_01",
-          "WM_F3_01",
-          "WM_F3_01_Cover"
-        ],
-        [
-          "WM_F3_02",
-          "WM_F3_02",
-          "WM_F3_02_Cover"
-        ],
-        [
-          "WM_F3_03",
-          "WM_F3_03",
-          "WM_F3_03_Cover"
-        ],
-        [
-          "WM_F3_05",
-          "WM_F3_05",
-          "WM_F3_05_Cover"
-        ],
-        [
-          "WM_F3_06",
-          "WM_F3_06",
-          "WM_F3_06_Cover"
-        ],
-        [
-          "WM_F3_07",
-          "WM_F3_07",
-          "WM_F3_07_Cover"
-        ],
-        [
-          "WM_F3_08",
-          "WM_F3_08",
-          "WM_F3_08_Cover"
-        ],
-        [
-          "WM_F3_09",
-          "WM_F3_09",
-          "WM_F3_09_Cover"
-        ],
-        [
-          "WM_F3_10",
-          "WM_F3_10",
-          "WM_F3_10_Cover"
-        ],
-        [
-          "WM_F3_11",
-          "WM_F3_11",
-          "WM_F3_11_Cover"
-        ],
-        [
-          "WM_F3_12",
-          "WM_F3_12",
-          "WM_F3_12_Cover"
-        ],
-        [
-          "WM_F3_13",
-          "WM_F3_13",
-          "WM_F3_13_Cover"
-        ],
-        [
-          "WM_F3_14",
-          "WM_F3_14",
-          "WM_F3_14_Cover"
-        ],
-        [
-          "WM_F3_15",
-          "WM_F3_15",
-          "WM_F3_15_Cover"
-        ],
-        [
-          "WM_F3_16",
-          "WM_F3_16",
-          "WM_F3_16_Cover"
-        ],
-        [
-          "WM_F3_17",
-          "WM_F3_17",
-          "WM_F3_17_Cover"
-        ],
-        [
-          "WM_F3_18",
-          "WM_F3_18",
-          "WM_F3_18_Cover"
-        ],
-        [
-          "WM_F3_19",
-          "WM_F3_19",
-          "WM_F3_19_Cover"
-        ],
-        [
-          "WM_F3_20",
-          "WM_F3_20",
-          "WM_F3_20_Cover"
-        ],
-        [
-          "WM_F3_21",
-          "WM_F3_21",
-          "WM_F3_21_Cover"
-        ],
-        [
-          "WM_F3_22",
-          "WM_F3_22",
-          "WM_F3_22_Cover"
-        ],
-        [
-          "WM_F3_23",
-          "WM_F3_23",
-          "WM_F3_23_Cover"
-        ],
-        [
-          "WM_F3_24",
-          "WM_F3_24",
-          "WM_F3_24_Cover"
-        ]
+        ["WM_F3_00", "WM_F3_00", "WM_F3_00_Cover"],
+        ["WM_F3_01", "WM_F3_01", "WM_F3_01_Cover"],
+        ["WM_F3_02", "WM_F3_02", "WM_F3_02_Cover"],
+        ["WM_F3_03", "WM_F3_03", "WM_F3_03_Cover"],
+        ["WM_F3_05", "WM_F3_05", "WM_F3_05_Cover"],
+        ["WM_F3_06", "WM_F3_06", "WM_F3_06_Cover"],
+        ["WM_F3_07", "WM_F3_07", "WM_F3_07_Cover"],
+        ["WM_F3_08", "WM_F3_08", "WM_F3_08_Cover"],
+        ["WM_F3_09", "WM_F3_09", "WM_F3_09_Cover"],
+        ["WM_F3_10", "WM_F3_10", "WM_F3_10_Cover"],
+        ["WM_F3_11", "WM_F3_11", "WM_F3_11_Cover"],
+        ["WM_F3_12", "WM_F3_12", "WM_F3_12_Cover"],
+        ["WM_F3_13", "WM_F3_13", "WM_F3_13_Cover"],
+        ["WM_F3_14", "WM_F3_14", "WM_F3_14_Cover"],
+        ["WM_F3_15", "WM_F3_15", "WM_F3_15_Cover"],
+        ["WM_F3_16", "WM_F3_16", "WM_F3_16_Cover"],
+        ["WM_F3_17", "WM_F3_17", "WM_F3_17_Cover"],
+        ["WM_F3_18", "WM_F3_18", "WM_F3_18_Cover"],
+        ["WM_F3_19", "WM_F3_19", "WM_F3_19_Cover"],
+        ["WM_F3_20", "WM_F3_20", "WM_F3_20_Cover"],
+        ["WM_F3_21", "WM_F3_21", "WM_F3_21_Cover"],
+        ["WM_F3_22", "WM_F3_22", "WM_F3_22_Cover"],
+        ["WM_F3_23", "WM_F3_23", "WM_F3_23_Cover"],
+        ["WM_F3_24", "WM_F3_24", "WM_F3_24_Cover"]
       ]
     },
     {
@@ -149,126 +51,30 @@
       "facade": "WM_F4_Facade",
       "proxy": "WM_F4_Proxy",
       "units": [
-        [
-          "WM_F4_00",
-          "WM_F4_00",
-          "WM_F4_00_Cover"
-        ],
-        [
-          "WM_F4_01",
-          "WM_F4_01",
-          "WM_F4_01_Cover"
-        ],
-        [
-          "WM_F4_02",
-          "WM_F4_02",
-          "WM_F4_02_Cover"
-        ],
-        [
-          "WM_F4_03",
-          "WM_F4_03",
-          "WM_F4_03_Cover"
-        ],
-        [
-          "WM_F4_05",
-          "WM_F4_05",
-          "WM_F4_05_Cover"
-        ],
-        [
-          "WM_F4_06",
-          "WM_F4_06",
-          "WM_F4_06_Cover"
-        ],
-        [
-          "WM_F4_07",
-          "WM_F4_07",
-          "WM_F4_07_Cover"
-        ],
-        [
-          "WM_F4_08",
-          "WM_F4_08",
-          "WM_F4_08_Cover"
-        ],
-        [
-          "WM_F4_09",
-          "WM_F4_09",
-          "WM_F4_09_Cover"
-        ],
-        [
-          "WM_F4_10",
-          "WM_F4_10",
-          "WM_F4_10_Cover"
-        ],
-        [
-          "WM_F4_11",
-          "WM_F4_11",
-          "WM_F4_11_Cover"
-        ],
-        [
-          "WM_F4_12",
-          "WM_F4_12",
-          "WM_F4_12_Cover"
-        ],
-        [
-          "WM_F4_13",
-          "WM_F4_13",
-          "WM_F4_13_Cover"
-        ],
-        [
-          "WM_F4_14",
-          "WM_F4_14",
-          "WM_F4_14_Cover"
-        ],
-        [
-          "WM_F4_15",
-          "WM_F4_15",
-          "WM_F4_15_Cover"
-        ],
-        [
-          "WM_F4_16",
-          "WM_F4_16",
-          "WM_F4_16_Cover"
-        ],
-        [
-          "WM_F4_17",
-          "WM_F4_17",
-          "WM_F4_17_Cover"
-        ],
-        [
-          "WM_F4_18",
-          "WM_F4_18",
-          "WM_F4_18_Cover"
-        ],
-        [
-          "WM_F4_19",
-          "WM_F4_19",
-          "WM_F4_19_Cover"
-        ],
-        [
-          "WM_F4_20",
-          "WM_F4_20",
-          "WM_F4_20_Cover"
-        ],
-        [
-          "WM_F4_21",
-          "WM_F4_21",
-          "WM_F4_21_Cover"
-        ],
-        [
-          "WM_F4_22",
-          "WM_F4_22",
-          "WM_F4_22_Cover"
-        ],
-        [
-          "WM_F4_23",
-          "WM_F4_23",
-          "WM_F4_23_Cover"
-        ],
-        [
-          "WM_F4_24",
-          "WM_F4_24",
-          "WM_F4_24_Cover"
-        ]
+        ["WM_F4_00", "WM_F4_00", "WM_F4_00_Cover"],
+        ["WM_F4_01", "WM_F4_01", "WM_F4_01_Cover"],
+        ["WM_F4_02", "WM_F4_02", "WM_F4_02_Cover"],
+        ["WM_F4_03", "WM_F4_03", "WM_F4_03_Cover"],
+        ["WM_F4_05", "WM_F4_05", "WM_F4_05_Cover"],
+        ["WM_F4_06", "WM_F4_06", "WM_F4_06_Cover"],
+        ["WM_F4_07", "WM_F4_07", "WM_F4_07_Cover"],
+        ["WM_F4_08", "WM_F4_08", "WM_F4_08_Cover"],
+        ["WM_F4_09", "WM_F4_09", "WM_F4_09_Cover"],
+        ["WM_F4_10", "WM_F4_10", "WM_F4_10_Cover"],
+        ["WM_F4_11", "WM_F4_11", "WM_F4_11_Cover"],
+        ["WM_F4_12", "WM_F4_12", "WM_F4_12_Cover"],
+        ["WM_F4_13", "WM_F4_13", "WM_F4_13_Cover"],
+        ["WM_F4_14", "WM_F4_14", "WM_F4_14_Cover"],
+        ["WM_F4_15", "WM_F4_15", "WM_F4_15_Cover"],
+        ["WM_F4_16", "WM_F4_16", "WM_F4_16_Cover"],
+        ["WM_F4_17", "WM_F4_17", "WM_F4_17_Cover"],
+        ["WM_F4_18", "WM_F4_18", "WM_F4_18_Cover"],
+        ["WM_F4_19", "WM_F4_19", "WM_F4_19_Cover"],
+        ["WM_F4_20", "WM_F4_20", "WM_F4_20_Cover"],
+        ["WM_F4_21", "WM_F4_21", "WM_F4_21_Cover"],
+        ["WM_F4_22", "WM_F4_22", "WM_F4_22_Cover"],
+        ["WM_F4_23", "WM_F4_23", "WM_F4_23_Cover"],
+        ["WM_F4_24", "WM_F4_24", "WM_F4_24_Cover"]
       ]
     },
     {
@@ -277,126 +83,30 @@
       "facade": "WM_F5_Facade",
       "proxy": "WM_F5_Proxy",
       "units": [
-        [
-          "WM_F5_00",
-          "WM_F5_00",
-          "WM_F5_00_Cover"
-        ],
-        [
-          "WM_F5_01",
-          "WM_F5_01",
-          "WM_F5_01_Cover"
-        ],
-        [
-          "WM_F5_02",
-          "WM_F5_02",
-          "WM_F5_02_Cover"
-        ],
-        [
-          "WM_F5_03",
-          "WM_F5_03",
-          "WM_F5_03_Cover"
-        ],
-        [
-          "WM_F5_05",
-          "WM_F5_05",
-          "WM_F5_05_Cover"
-        ],
-        [
-          "WM_F5_06",
-          "WM_F5_06",
-          "WM_F5_06_Cover"
-        ],
-        [
-          "WM_F5_07",
-          "WM_F5_07",
-          "WM_F5_07_Cover"
-        ],
-        [
-          "WM_F5_08",
-          "WM_F5_08",
-          "WM_F5_08_Cover"
-        ],
-        [
-          "WM_F5_09",
-          "WM_F5_09",
-          "WM_F5_09_Cover"
-        ],
-        [
-          "WM_F5_10",
-          "WM_F5_10",
-          "WM_F5_10_Cover"
-        ],
-        [
-          "WM_F5_11",
-          "WM_F5_11",
-          "WM_F5_11_Cover"
-        ],
-        [
-          "WM_F5_12",
-          "WM_F5_12",
-          "WM_F5_12_Cover"
-        ],
-        [
-          "WM_F5_13",
-          "WM_F5_13",
-          "WM_F5_13_Cover"
-        ],
-        [
-          "WM_F5_14",
-          "WM_F5_14",
-          "WM_F5_14_Cover"
-        ],
-        [
-          "WM_F5_15",
-          "WM_F5_15",
-          "WM_F5_15_Cover"
-        ],
-        [
-          "WM_F5_16",
-          "WM_F5_16",
-          "WM_F5_16_Cover"
-        ],
-        [
-          "WM_F5_17",
-          "WM_F5_17",
-          "WM_F5_17_Cover"
-        ],
-        [
-          "WM_F5_18",
-          "WM_F5_18",
-          "WM_F5_18_Cover"
-        ],
-        [
-          "WM_F5_19",
-          "WM_F5_19",
-          "WM_F5_19_Cover"
-        ],
-        [
-          "WM_F5_20",
-          "WM_F5_20",
-          "WM_F5_20_Cover"
-        ],
-        [
-          "WM_F5_21",
-          "WM_F5_21",
-          "WM_F5_21_Cover"
-        ],
-        [
-          "WM_F5_22",
-          "WM_F5_22",
-          "WM_F5_22_Cover"
-        ],
-        [
-          "WM_F5_23",
-          "WM_F5_23",
-          "WM_F5_23_Cover"
-        ],
-        [
-          "WM_F5_24",
-          "WM_F5_24",
-          "WM_F5_24_Cover"
-        ]
+        ["WM_F5_00", "WM_F5_00", "WM_F5_00_Cover"],
+        ["WM_F5_01", "WM_F5_01", "WM_F5_01_Cover"],
+        ["WM_F5_02", "WM_F5_02", "WM_F5_02_Cover"],
+        ["WM_F5_03", "WM_F5_03", "WM_F5_03_Cover"],
+        ["WM_F5_05", "WM_F5_05", "WM_F5_05_Cover"],
+        ["WM_F5_06", "WM_F5_06", "WM_F5_06_Cover"],
+        ["WM_F5_07", "WM_F5_07", "WM_F5_07_Cover"],
+        ["WM_F5_08", "WM_F5_08", "WM_F5_08_Cover"],
+        ["WM_F5_09", "WM_F5_09", "WM_F5_09_Cover"],
+        ["WM_F5_10", "WM_F5_10", "WM_F5_10_Cover"],
+        ["WM_F5_11", "WM_F5_11", "WM_F5_11_Cover"],
+        ["WM_F5_12", "WM_F5_12", "WM_F5_12_Cover"],
+        ["WM_F5_13", "WM_F5_13", "WM_F5_13_Cover"],
+        ["WM_F5_14", "WM_F5_14", "WM_F5_14_Cover"],
+        ["WM_F5_15", "WM_F5_15", "WM_F5_15_Cover"],
+        ["WM_F5_16", "WM_F5_16", "WM_F5_16_Cover"],
+        ["WM_F5_17", "WM_F5_17", "WM_F5_17_Cover"],
+        ["WM_F5_18", "WM_F5_18", "WM_F5_18_Cover"],
+        ["WM_F5_19", "WM_F5_19", "WM_F5_19_Cover"],
+        ["WM_F5_20", "WM_F5_20", "WM_F5_20_Cover"],
+        ["WM_F5_21", "WM_F5_21", "WM_F5_21_Cover"],
+        ["WM_F5_22", "WM_F5_22", "WM_F5_22_Cover"],
+        ["WM_F5_23", "WM_F5_23", "WM_F5_23_Cover"],
+        ["WM_F5_24", "WM_F5_24", "WM_F5_24_Cover"]
       ]
     },
     {
@@ -405,126 +115,30 @@
       "facade": "WM_F6_Facade",
       "proxy": "WM_F6_Proxy",
       "units": [
-        [
-          "WM_F6_00",
-          "WM_F6_00",
-          "WM_F6_00_Cover"
-        ],
-        [
-          "WM_F6_01",
-          "WM_F6_01",
-          "WM_F6_01_Cover"
-        ],
-        [
-          "WM_F6_02",
-          "WM_F6_02",
-          "WM_F6_02_Cover"
-        ],
-        [
-          "WM_F6_03",
-          "WM_F6_03",
-          "WM_F6_03_Cover"
-        ],
-        [
-          "WM_F6_05",
-          "WM_F6_05",
-          "WM_F6_05_Cover"
-        ],
-        [
-          "WM_F6_06",
-          "WM_F6_06",
-          "WM_F6_06_Cover"
-        ],
-        [
-          "WM_F6_07",
-          "WM_F6_07",
-          "WM_F6_07_Cover"
-        ],
-        [
-          "WM_F6_08",
-          "WM_F6_08",
-          "WM_F6_08_Cover"
-        ],
-        [
-          "WM_F6_09",
-          "WM_F6_09",
-          "WM_F6_09_Cover"
-        ],
-        [
-          "WM_F6_10",
-          "WM_F6_10",
-          "WM_F6_10_Cover"
-        ],
-        [
-          "WM_F6_11",
-          "WM_F6_11",
-          "WM_F6_11_Cover"
-        ],
-        [
-          "WM_F6_12",
-          "WM_F6_12",
-          "WM_F6_12_Cover"
-        ],
-        [
-          "WM_F6_13",
-          "WM_F6_13",
-          "WM_F6_13_Cover"
-        ],
-        [
-          "WM_F6_14",
-          "WM_F6_14",
-          "WM_F6_14_Cover"
-        ],
-        [
-          "WM_F6_15",
-          "WM_F6_15",
-          "WM_F6_15_Cover"
-        ],
-        [
-          "WM_F6_16",
-          "WM_F6_16",
-          "WM_F6_16_Cover"
-        ],
-        [
-          "WM_F6_17",
-          "WM_F6_17",
-          "WM_F6_17_Cover"
-        ],
-        [
-          "WM_F6_18",
-          "WM_F6_18",
-          "WM_F6_18_Cover"
-        ],
-        [
-          "WM_F6_19",
-          "WM_F6_19",
-          "WM_F6_19_Cover"
-        ],
-        [
-          "WM_F6_20",
-          "WM_F6_20",
-          "WM_F6_20_Cover"
-        ],
-        [
-          "WM_F6_21",
-          "WM_F6_21",
-          "WM_F6_21_Cover"
-        ],
-        [
-          "WM_F6_22",
-          "WM_F6_22",
-          "WM_F6_22_Cover"
-        ],
-        [
-          "WM_F6_23",
-          "WM_F6_23",
-          "WM_F6_23_Cover"
-        ],
-        [
-          "WM_F6_24",
-          "WM_F6_24",
-          "WM_F6_24_Cover"
-        ]
+        ["WM_F6_00", "WM_F6_00", "WM_F6_00_Cover"],
+        ["WM_F6_01", "WM_F6_01", "WM_F6_01_Cover"],
+        ["WM_F6_02", "WM_F6_02", "WM_F6_02_Cover"],
+        ["WM_F6_03", "WM_F6_03", "WM_F6_03_Cover"],
+        ["WM_F6_05", "WM_F6_05", "WM_F6_05_Cover"],
+        ["WM_F6_06", "WM_F6_06", "WM_F6_06_Cover"],
+        ["WM_F6_07", "WM_F6_07", "WM_F6_07_Cover"],
+        ["WM_F6_08", "WM_F6_08", "WM_F6_08_Cover"],
+        ["WM_F6_09", "WM_F6_09", "WM_F6_09_Cover"],
+        ["WM_F6_10", "WM_F6_10", "WM_F6_10_Cover"],
+        ["WM_F6_11", "WM_F6_11", "WM_F6_11_Cover"],
+        ["WM_F6_12", "WM_F6_12", "WM_F6_12_Cover"],
+        ["WM_F6_13", "WM_F6_13", "WM_F6_13_Cover"],
+        ["WM_F6_14", "WM_F6_14", "WM_F6_14_Cover"],
+        ["WM_F6_15", "WM_F6_15", "WM_F6_15_Cover"],
+        ["WM_F6_16", "WM_F6_16", "WM_F6_16_Cover"],
+        ["WM_F6_17", "WM_F6_17", "WM_F6_17_Cover"],
+        ["WM_F6_18", "WM_F6_18", "WM_F6_18_Cover"],
+        ["WM_F6_19", "WM_F6_19", "WM_F6_19_Cover"],
+        ["WM_F6_20", "WM_F6_20", "WM_F6_20_Cover"],
+        ["WM_F6_21", "WM_F6_21", "WM_F6_21_Cover"],
+        ["WM_F6_22", "WM_F6_22", "WM_F6_22_Cover"],
+        ["WM_F6_23", "WM_F6_23", "WM_F6_23_Cover"],
+        ["WM_F6_24", "WM_F6_24", "WM_F6_24_Cover"]
       ]
     },
     {
@@ -533,126 +147,30 @@
       "facade": "WM_F7_Facade",
       "proxy": "WM_F7_Proxy",
       "units": [
-        [
-          "WM_F7_00",
-          "WM_F7_00",
-          "WM_F7_00_Cover"
-        ],
-        [
-          "WM_F7_01",
-          "WM_F7_01",
-          "WM_F7_01_Cover"
-        ],
-        [
-          "WM_F7_02",
-          "WM_F7_02",
-          "WM_F7_02_Cover"
-        ],
-        [
-          "WM_F7_03",
-          "WM_F7_03",
-          "WM_F7_03_Cover"
-        ],
-        [
-          "WM_F7_05",
-          "WM_F7_05",
-          "WM_F7_05_Cover"
-        ],
-        [
-          "WM_F7_06",
-          "WM_F7_06",
-          "WM_F7_06_Cover"
-        ],
-        [
-          "WM_F7_07",
-          "WM_F7_07",
-          "WM_F7_07_Cover"
-        ],
-        [
-          "WM_F7_08",
-          "WM_F7_08",
-          "WM_F7_08_Cover"
-        ],
-        [
-          "WM_F7_09",
-          "WM_F7_09",
-          "WM_F7_09_Cover"
-        ],
-        [
-          "WM_F7_10",
-          "WM_F7_10",
-          "WM_F7_10_Cover"
-        ],
-        [
-          "WM_F7_11",
-          "WM_F7_11",
-          "WM_F7_11_Cover"
-        ],
-        [
-          "WM_F7_12",
-          "WM_F7_12",
-          "WM_F7_12_Cover"
-        ],
-        [
-          "WM_F7_13",
-          "WM_F7_13",
-          "WM_F7_13_Cover"
-        ],
-        [
-          "WM_F7_14",
-          "WM_F7_14",
-          "WM_F7_14_Cover"
-        ],
-        [
-          "WM_F7_15",
-          "WM_F7_15",
-          "WM_F7_15_Cover"
-        ],
-        [
-          "WM_F7_16",
-          "WM_F7_16",
-          "WM_F7_16_Cover"
-        ],
-        [
-          "WM_F7_17",
-          "WM_F7_17",
-          "WM_F7_17_Cover"
-        ],
-        [
-          "WM_F7_18",
-          "WM_F7_18",
-          "WM_F7_18_Cover"
-        ],
-        [
-          "WM_F7_19",
-          "WM_F7_19",
-          "WM_F7_19_Cover"
-        ],
-        [
-          "WM_F7_20",
-          "WM_F7_20",
-          "WM_F7_20_Cover"
-        ],
-        [
-          "WM_F7_21",
-          "WM_F7_21",
-          "WM_F7_21_Cover"
-        ],
-        [
-          "WM_F7_22",
-          "WM_F7_22",
-          "WM_F7_22_Cover"
-        ],
-        [
-          "WM_F7_23",
-          "WM_F7_23",
-          "WM_F7_23_Cover"
-        ],
-        [
-          "WM_F7_24",
-          "WM_F7_24",
-          "WM_F7_24_Cover"
-        ]
+        ["WM_F7_00", "WM_F7_00", "WM_F7_00_Cover"],
+        ["WM_F7_01", "WM_F7_01", "WM_F7_01_Cover"],
+        ["WM_F7_02", "WM_F7_02", "WM_F7_02_Cover"],
+        ["WM_F7_03", "WM_F7_03", "WM_F7_03_Cover"],
+        ["WM_F7_05", "WM_F7_05", "WM_F7_05_Cover"],
+        ["WM_F7_06", "WM_F7_06", "WM_F7_06_Cover"],
+        ["WM_F7_07", "WM_F7_07", "WM_F7_07_Cover"],
+        ["WM_F7_08", "WM_F7_08", "WM_F7_08_Cover"],
+        ["WM_F7_09", "WM_F7_09", "WM_F7_09_Cover"],
+        ["WM_F7_10", "WM_F7_10", "WM_F7_10_Cover"],
+        ["WM_F7_11", "WM_F7_11", "WM_F7_11_Cover"],
+        ["WM_F7_12", "WM_F7_12", "WM_F7_12_Cover"],
+        ["WM_F7_13", "WM_F7_13", "WM_F7_13_Cover"],
+        ["WM_F7_14", "WM_F7_14", "WM_F7_14_Cover"],
+        ["WM_F7_15", "WM_F7_15", "WM_F7_15_Cover"],
+        ["WM_F7_16", "WM_F7_16", "WM_F7_16_Cover"],
+        ["WM_F7_17", "WM_F7_17", "WM_F7_17_Cover"],
+        ["WM_F7_18", "WM_F7_18", "WM_F7_18_Cover"],
+        ["WM_F7_19", "WM_F7_19", "WM_F7_19_Cover"],
+        ["WM_F7_20", "WM_F7_20", "WM_F7_20_Cover"],
+        ["WM_F7_21", "WM_F7_21", "WM_F7_21_Cover"],
+        ["WM_F7_22", "WM_F7_22", "WM_F7_22_Cover"],
+        ["WM_F7_23", "WM_F7_23", "WM_F7_23_Cover"],
+        ["WM_F7_24", "WM_F7_24", "WM_F7_24_Cover"]
       ]
     },
     {
@@ -661,91 +179,23 @@
       "facade": "WM_F8_Facade",
       "proxy": "WM_F8_Proxy",
       "units": [
-        [
-          "WM_F8_01",
-          "WM_F8_01",
-          "WM_F8_01_Cover"
-        ],
-        [
-          "WM_F8_02",
-          "WM_F8_02",
-          "WM_F8_02_Cover"
-        ],
-        [
-          "WM_F8_03",
-          "WM_F8_03",
-          "WM_F8_03_Cover"
-        ],
-        [
-          "WM_F8_04",
-          "WM_F8_04",
-          "WM_F8_04_Cover"
-        ],
-        [
-          "WM_F8_05",
-          "WM_F8_05",
-          "WM_F8_05_Cover"
-        ],
-        [
-          "WM_F8_06",
-          "WM_F8_06",
-          "WM_F8_06_Cover"
-        ],
-        [
-          "WM_F8_07",
-          "WM_F8_07",
-          "WM_F8_07_Cover"
-        ],
-        [
-          "WM_F8_08",
-          "WM_F8_08",
-          "WM_F8_08_Cover"
-        ],
-        [
-          "WM_F8_09",
-          "WM_F8_09",
-          "WM_F8_09_Cover"
-        ],
-        [
-          "WM_F8_10",
-          "WM_F8_10",
-          "WM_F8_10_Cover"
-        ],
-        [
-          "WM_F8_11",
-          "WM_F8_11",
-          "WM_F8_11_Cover"
-        ],
-        [
-          "WM_F8_12",
-          "WM_F8_12",
-          "WM_F8_12_Cover"
-        ],
-        [
-          "WM_F8_13",
-          "WM_F8_13",
-          "WM_F8_13_Cover"
-        ],
-        [
-          "WM_F8_14",
-          "WM_F8_14",
-          "WM_F8_14_Cover"
-        ],
-        [
-          "WM_F8_15",
-          "WM_F8_15",
-          "WM_F8_15_Cover"
-        ],
-        [
-          "WM_F8_16",
-          "WM_F8_16",
-          "WM_F8_16_Cover"
-        ],
-        [
-          "WM_F8_17",
-          "WM_F8_17",
-          "WM_F8_17_Cover"
-        ]
+        ["WM_F8_01", "WM_F8_01", "WM_F8_01_Cover"],
+        ["WM_F8_02", "WM_F8_02", "WM_F8_02_Cover"],
+        ["WM_F8_03", "WM_F8_03", "WM_F8_03_Cover"],
+        ["WM_F8_04", "WM_F8_04", "WM_F8_04_Cover"],
+        ["WM_F8_05", "WM_F8_05", "WM_F8_05_Cover"],
+        ["WM_F8_06", "WM_F8_06", "WM_F8_06_Cover"],
+        ["WM_F8_07", "WM_F8_07", "WM_F8_07_Cover"],
+        ["WM_F8_08", "WM_F8_08", "WM_F8_08_Cover"],
+        ["WM_F8_09", "WM_F8_09", "WM_F8_09_Cover"],
+        ["WM_F8_10", "WM_F8_10", "WM_F8_10_Cover"],
+        ["WM_F8_11", "WM_F8_11", "WM_F8_11_Cover"],
+        ["WM_F8_12", "WM_F8_12", "WM_F8_12_Cover"],
+        ["WM_F8_13", "WM_F8_13", "WM_F8_13_Cover"],
+        ["WM_F8_14", "WM_F8_14", "WM_F8_14_Cover"],
+        ["WM_F8_15", "WM_F8_15", "WM_F8_15_Cover"],
+        ["WM_F8_16", "WM_F8_16", "WM_F8_16_Cover"],
+        ["WM_F8_17", "WM_F8_17", "WM_F8_17_Cover"]
       ]
     },
     {
@@ -756,9 +206,5 @@
       "units": []
     }
   ],
-  "center": [
-    0.0,
-    0.0,
-    -0.0
-  ]
+  "center": [0.0, 0.0, -0.0]
 }

@@ -15,34 +15,41 @@ export class RenderSceneNode extends WebGLNode {
   outColor = this.createOutput<Texture>()
   outDepth = this.createOutput<Texture>()
 
-  private renderTarget = new WebGLRenderTarget(1, 1, {
-    depthBuffer: true,
-    depthTexture: new DepthTexture(1, 1),
-  })
+  private renderTarget: WebGLRenderTarget | null = null
+  quality = 1
 
   initialize(): void {
+    this.renderTarget = new WebGLRenderTarget(1, 1, {
+      depthBuffer: true,
+      depthTexture: new DepthTexture(1, 1),
+    })
+    this.resizeTarget(this.canvas.clientWidth, this.canvas.clientHeight)
     this.outColor.value = this.renderTarget.texture
     this.outDepth.value = this.renderTarget.depthTexture
   }
-  execute(): void {
+
+  execute() {
     const { inpScene, inpCamera } = this
     const { renderer, renderTarget } = this
-    const width = this.renderer.domElement.clientWidth
-    const height = this.renderer.domElement.clientHeight
-
-    this.renderTarget.setSize(width, height)
+    const width = this.canvas.clientWidth * this.quality
+    const height = this.canvas.clientHeight * this.quality
 
     if (inpCamera.value instanceof PerspectiveCamera) {
-      inpCamera.value.aspect = this.canvas.width / this.canvas.height
+      inpCamera.value.aspect = width / height
       inpCamera.value.updateProjectionMatrix()
+    } else {
+      // TODO
     }
 
     renderer.setRenderTarget(this.renderTarget)
-    renderer.setSize(width, height, false)
-    renderTarget.setSize(width, height)
+    this.resizeTarget(width, height)
 
     if (inpScene.value && inpCamera.value) {
       renderer.render(inpScene.value, inpCamera.value)
+      if (renderTarget) {
+        this.outColor.value = renderTarget.texture
+        this.outDepth.value = renderTarget.depthTexture
+      }
     }
   }
 }
