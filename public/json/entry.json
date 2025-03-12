@@ -13,6 +13,13 @@
             "/json/WM.json"
         ]
     ],
+    "neighborhood": [
+        [
+            "osm",
+            "/glb/osm.glb",
+            "/json/osm.json"
+        ]
+    ],
     "startCameraPosition": [
         -1942.0618896484375,
         114.49624633789062,

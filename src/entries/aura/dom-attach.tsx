@@ -1,4 +1,4 @@
-import { createAura, DevPanel, DOMAttach, ProjectLoader } from "aura"
+import { createAura, DevPanel, DOMAttach, ProjectLoader, OsmLoader } from "aura"
 const canvas = document.createElement("canvas")
 Object.assign(canvas.style, {
   position: "fixed",
@@ -13,7 +13,9 @@ const aura = createAura()
 aura.add(DevPanel)
 
 const loader = aura.get(ProjectLoader)
-loader.load("public/json/entry.json")
+loader.load("/json/entry.json")
+const loaderOSM = aura.get(OsmLoader)
+loaderOSM.load("/json/entryOsm.json")
 aura.initialize()
 
 aura.get(DOMAttach).attach(canvas)

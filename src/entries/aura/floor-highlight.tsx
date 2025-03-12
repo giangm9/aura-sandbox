@@ -13,7 +13,7 @@ const aura = createAura()
 aura.add(DevPanel)
 
 const loader = aura.get(ProjectLoader)
-loader.load("public/json/entry.json")
+loader.load("/json/entry.json")
 aura.initialize()
 
 aura.get(DOMAttach).attach(canvas)
