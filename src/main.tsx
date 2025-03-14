@@ -14,7 +14,7 @@ if (entry) {
 
   function App() {
     return (
-      <div className="children-container" style={{ border: "none" }}>
+      <div className="children-container main-panel" style={{ border: "none" }}>
         {roots.map((path) => (
           <Item key={path} path={path} />
         ))}
@@ -36,9 +36,11 @@ if (entry) {
     const name = path.split("/").pop()
     const closeChildren = ENTRY_MAP.filter((item) =>
       item.startsWith(path + "/")
-    ).filter((item) => {
-      return item.replace(path + "/", "").split("/").length === 1
-    })
+    )
+      .filter((item) => {
+        return item.replace(path + "/", "").split("/").length === 1
+      })
+      .sort((a) => (a.endsWith(".tsx") ? 1 : -1))
     const type = path.endsWith(".tsx") ? "file" : "folder"
     const glyph = type == "folder" ? (open ? "📂" : "📁") : "⚛️"
 

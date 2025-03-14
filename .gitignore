@@ -23,5 +23,5 @@ src.zip
 *.njsproj
 *.sln
 *.sw?
-
+dist
 __pycache__

@@ -73,7 +73,7 @@ const updateHelper = createHelper()
 
 const targets = [] as State[]
 
-for (var i = 0; i < 1; i++) {
+for (var i = 0; i < 3; i++) {
   const radius = 10
   const position = [
     Math.random() * radius - radius / 2,

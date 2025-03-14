@@ -1,9 +1,14 @@
+import Stats from "stats.js"
 export function startAnimationLoop() {
-  const updateFuncs: Function[] = []
+  const stats = new Stats()
+  document.body.appendChild(stats.dom)
+  const updateFuncs: (() => void)[] = []
 
   function update() {
-    updateFuncs.forEach((func) => func())
     requestAnimationFrame(update)
+    stats.begin()
+    updateFuncs.forEach((func) => func())
+    stats.end()
   }
 
   update()

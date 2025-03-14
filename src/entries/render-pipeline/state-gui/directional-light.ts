@@ -1,11 +1,16 @@
 import GUI from "lil-gui"
-import { DirectionalLight } from "three"
+import { CameraHelper, DirectionalLight } from "three"
 
-export function bindDirectionalLight(gui: GUI, light: DirectionalLight) {
+export function bindDirectionalLight(
+  gui: GUI,
+  light: DirectionalLight,
+  shadowHelper: CameraHelper
+) {
   const state = {
-    phi: 0,
+    phi: (Math.random() * Math.PI) / 2,
     theta: Math.PI / 4,
     distance: 20,
+    size: 15,
   }
   function updateLightPosition() {
     light.position.set(
@@ -29,4 +34,12 @@ export function bindDirectionalLight(gui: GUI, light: DirectionalLight) {
     light.shadow.needsUpdate = true
   })
   folder.add(light, "intensity", 0, 2)
+  folder.add(state, "size", 0, 30).onChange(() => {
+    light.shadow.camera.left = -state.size
+    light.shadow.camera.right = state.size
+    light.shadow.camera.top = state.size
+    light.shadow.camera.bottom = -state.size
+    light.shadow.camera.updateProjectionMatrix()
+    shadowHelper.update()
+  })
 }

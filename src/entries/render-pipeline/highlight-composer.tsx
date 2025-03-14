@@ -1,7 +1,8 @@
 import GUI from "lil-gui"
-import Stats from "stats.js"
+
 import {
   AmbientLight,
+  CameraHelper,
   DirectionalLight,
   Mesh,
   MeshNormalMaterial,
@@ -13,7 +14,7 @@ import { GLTFLoader } from "three/examples/jsm/Addons.js"
 import { CanvasNode } from "../../lib/composer/nodes/CanvasNode"
 import { RenderSceneNode } from "../../lib/composer/nodes/RenderSceneNode"
 import { ShaderNode } from "../../lib/composer/nodes/ShaderNode"
-import { bindDirectionalLight } from "../../lib/pane/DirectionalLight"
+import { bindDirectionalLight } from "./state-gui/directional-light"
 import { cameraWithControls, setupWithComposer } from "./setup"
 
 const loader = new GLTFLoader()
@@ -25,11 +26,6 @@ camera.far = 300
 
 const scene = new Scene()
 scene.add(camera)
-const stats = new Stats()
-document.body.appendChild(stats.dom)
-updateFuncs.unshift(() => {
-  stats.begin()
-})
 
 loader.load("public/glb/small_houses.glb", (gltf) => {
   scene.add(gltf.scene)
@@ -65,7 +61,7 @@ scene.add(light)
 // scene.add(shadowHelper)
 
 scene.add(new AmbientLight(0xffffff, 0.5))
-bindDirectionalLight(gui, light)
+bindDirectionalLight(gui, light, new CameraHelper(light.shadow.camera))
 
 const state = {
   house: "NONE",
@@ -221,7 +217,7 @@ combineNode.getInput("u_highlightDepth").outslot = focusNode.outDepth
 
 const canvasNode = composer.createNode(CanvasNode)
 canvasNode.name = "Canvas"
-canvasNode.inpColor.outslot = depthDebug.outColor
+canvasNode.inpColor.outslot = combineNode.outColor
 
 updateFuncs.push(() => {
   controls.update()
@@ -230,5 +226,4 @@ updateFuncs.push(() => {
 
 updateFuncs.push(() => {
   console.log(nonFocusSceneDepth.outDepth.value)
-  stats.end()
 })

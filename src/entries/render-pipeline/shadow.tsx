@@ -12,8 +12,9 @@ import {
 import { Pane } from "tweakpane"
 import { CanvasNode } from "../../lib/composer/nodes/CanvasNode"
 import { RenderSceneNode } from "../../lib/composer/nodes/RenderSceneNode"
-import { populateFloors } from "./populateFloors"
+
 import { cameraWithControls, setupWithComposer } from "./setup"
+import { populateFloors } from "./lib/populator"
 
 const { canvas, composer, updateFuncs, renderer } = setupWithComposer()
 
@@ -21,7 +22,10 @@ renderer.shadowMap.enabled = true
 renderer.shadowMap.type = PCFSoftShadowMap
 const pane = new Pane()
 const scene = new Scene()
-const floors = populateFloors()
+const floors = populateFloors({
+  count: 10,
+  radius: 2,
+})
 scene.add(...floors)
 floors.forEach((floor) => {
   floor.receiveShadow = true

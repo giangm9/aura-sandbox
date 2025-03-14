@@ -1,10 +1,12 @@
+const DEBUG = false
 export class Composer {
   nodes: Node[] = []
   execute(node: Node, debugIndent: number = 0) {
     if (node.executed) return
-    // console.group(
-    //   "  ".repeat(debugIndent) + `${this.constructor.name}::${node.name}`
-    // )
+    if (DEBUG)
+      console.group(
+        "  ".repeat(debugIndent) + `${node.constructor.name}::${node.name}`
+      )
 
     for (const input of node.inputs) {
       if (input.outslot && input.outslot.node) {
@@ -23,7 +25,7 @@ export class Composer {
     }
 
     node.execute()
-    console.groupEnd()
+    if (DEBUG) console.groupEnd()
   }
 
   freshExecute(node: Node) {
