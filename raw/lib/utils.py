@@ -12,3 +12,22 @@ def get_world_bounds(obj):
     else:
         print("Object is not a mesh")
         return None
+
+
+def select_object_recursive(obj):
+    """
+    Selects an object and all its immediate and nested children.
+
+    Args:
+        obj: The Blender object to select.
+    """
+
+    if obj is None:
+        return
+
+    # Select the object itself
+    obj.select_set(True)
+
+    # Recursively select children
+    for child in obj.children:
+        select_object_recursive(child)
