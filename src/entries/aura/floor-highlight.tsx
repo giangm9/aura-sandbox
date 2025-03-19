@@ -1,4 +1,5 @@
-import { Atoms, createAura, DOMAttach, ProjectLoader, StoreAPI } from "aura";
+import { atoms, Aura } from "aura";
+
 const canvas = document.createElement("canvas");
 Object.assign(canvas.style, {
   position: "fixed",
@@ -9,23 +10,17 @@ Object.assign(canvas.style, {
 } as CSSStyleDeclaration);
 document.body.appendChild(canvas);
 
-const aura = createAura();
-// aura.add(DevPanel)
-
-const loader = aura.get(ProjectLoader);
-loader.load("/json/entry.json");
-aura.initialize();
-
-aura.get(DOMAttach).attach(canvas);
-
-const store = aura.get(StoreAPI);
+const aura = new Aura();
+aura.addDevPanel();
+aura.load("/json/WM_entry.json");
+aura.store.set(atoms.canvas, canvas);
+const store = aura.store;
 
 const button = document.createElement("button");
 button.textContent = "Focus";
 button.onclick = () => {
-  const floors = store.get(Atoms.Focus.focusBuildingFloors);
-
-  store.set(Atoms.Focus.focusFloor, floors[0].id);
+  const floors = store.get(atoms.focusBuildingFloors);
+  store.set(atoms.focusFloor, floors[0].id);
 };
 button.style.position = "fixed";
 

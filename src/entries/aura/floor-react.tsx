@@ -1,20 +1,17 @@
-import { Atoms, createAura, DevPanel, ProjectLoader, StoreAPI } from "aura";
-import "./floor-react.css";
-import { createRoot } from "react-dom/client";
+import { atoms, Aura } from "aura";
 import { Provider, useAtom } from "jotai";
+import { createRoot } from "react-dom/client";
+import "./floor-react.css";
 
-const aura = createAura();
-aura.add(DevPanel);
-aura.initialize();
-const loader = aura.get(ProjectLoader);
-
-loader.load("public/json/entry.json");
+const aura = new Aura();
+aura.addDevPanel();
+aura.load("/json/WM_entry.json");
 
 function App() {
-  const [floor, setFloor] = useAtom(Atoms.Focus.focusFloor);
-  const [floors] = useAtom(Atoms.Focus.focusBuildingFloors);
+  const [floor, setFloor] = useAtom(atoms.focusFloor);
+  const [floors] = useAtom(atoms.focusBuildingFloors);
   const targetId = floors?.[0]?.id;
-  const [, setCanvas] = useAtom(Atoms.DOM.canvas);
+  const [, setCanvas] = useAtom(atoms.canvas);
 
   return (
     <div>
@@ -36,7 +33,7 @@ function App() {
 const root = document.getElementById("root");
 
 createRoot(root).render(
-  <Provider store={aura.get(StoreAPI).store}>
+  <Provider store={aura.store}>
     <App />
   </Provider>
 );

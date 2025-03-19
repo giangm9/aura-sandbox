@@ -1,8 +1,6 @@
-import { createAura, DevPanel, ProjectLoader } from "aura";
+import { Aura } from "aura";
 
-const aura = createAura();
-aura.add(DevPanel);
-aura.initialize();
+const aura = new Aura();
+aura.addDevPanel();
 
-const loader = aura.get(ProjectLoader);
-loader.load("/json/WM_entry.json");
+aura.load("/json/WM_entry.json");

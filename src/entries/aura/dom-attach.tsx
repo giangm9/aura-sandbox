@@ -1,4 +1,4 @@
-import { createAura, DevPanel, DOMAttach, ProjectLoader } from "aura";
+import { atoms, Aura } from "aura";
 const canvas = document.createElement("canvas");
 Object.assign(canvas.style, {
   position: "fixed",
@@ -9,11 +9,8 @@ Object.assign(canvas.style, {
 } as CSSStyleDeclaration);
 document.body.appendChild(canvas);
 
-const aura = createAura();
-aura.add(DevPanel);
-aura.initialize();
+const aura = new Aura();
+aura.addDevPanel();
 
-const loader = aura.get(ProjectLoader);
-loader.load("/json/WM_entry.json");
-
-aura.get(DOMAttach).attach(canvas);
+aura.load("/json/WM_entry.json");
+aura.store.set(atoms.canvas, canvas);
